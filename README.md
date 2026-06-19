@@ -1,7 +1,7 @@
-# 📖 TellaKitap — Modern, Premium & Sıra Dışı Dijital Kitabevi
+# 📖 Dopdolu — Modern, Premium & Sıra Dışı Dijital Kitabevi
 
 <p align="center">
-  <img src="assets/hero_banner.png" alt="TellaKitap Banner" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); margin-bottom: 20px;">
+  <img src="assets/hero_banner.png" alt="Dopdolu Banner" width="100%" style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.35); margin-bottom: 20px;">
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
 ---
 
 ### 🌟 Proje Tanımı
-**TellaKitap**, modern web arayüz standartlarının (HTML5, CSS3, ES6+ Javascript) en üst sınırlarını sergilemek amacıyla, **hiçbir harici kütüphane veya çatı (React, Vue, Tailwind, Bootstrap vb.) kullanılmadan sıfırdan geliştirilmiş** premium bir online kitap satış platformudur. 
+**Dopdolu**, modern web arayüz standartlarının (HTML5, CSS3, ES6+ Javascript) en üst sınırlarını sergilemek amacıyla, **hiçbir harici kütüphane veya çatı (React, Vue, Tailwind, Bootstrap vb.) kullanılmadan sıfırdan geliştirilmiş** premium bir online kitap satış platformudur. 
 
 Estetik detayları işlevsellikle harmanlayan bu vitrin projesi; cam efekti (**glassmorphism**), pürüzsüz donanım hızlandırmalı sayfa geçişleri, 3D CSS dönüşümleri içeren ödeme simülasyonları, tamamen entegre aydınlık/karanlık tema motoru ve mobil çentik uyumlu alt navigasyon barı ile modern bir web uygulamasının sunabileceği en yüksek kullanıcı deneyimini (**UX/UI**) hedefler.
 
@@ -23,7 +23,7 @@ Estetik detayları işlevsellikle harmanlayan bu vitrin projesi; cam efekti (**g
 
 ## 🚀 Canlı Önizleme (Live Demo)
 Projeyi tarayıcınızda anında test etmek, tüm animasyonları ve işlevleri deneyimlemek için:
-👉 **[TellaKitap Canlı Demo Bağlantısı](https://vahitkeskin.github.io/TellaKitap/)**
+👉 **[Dopdolu Canlı Demo Bağlantısı](https://vahitkeskin.github.io/Dopdolu/)**
 
 ---
 
@@ -68,7 +68,7 @@ graph TD
 
 ## 🎨 Tasarım Sistemi ve Renk Kültürü
 
-TellaKitap, **HSL (Hue, Saturation, Lightness)** renk modeli üzerinde inşa edilmiş, hem aydınlık hem de karanlık modlarda mükemmel kontrast oranları (WCAG standartları) sunan dinamik bir tasarım diline sahiptir.
+Dopdolu, **HSL (Hue, Saturation, Lightness)** renk modeli üzerinde inşa edilmiş, hem aydınlık hem de karanlık modlarda mükemmel kontrast oranları (WCAG standartları) sunan dinamik bir tasarım diline sahiptir.
 
 | Renk Değişkeni | Karanlık Mod (Varsayılan) | Aydınlık Mod (Sıcak Kağıt) | CSS Değişkeni | Tasarım Alanı |
 | :--- | :--- | :--- | :--- | :--- |
@@ -139,7 +139,7 @@ function generateSVGBookCover(title, author, category, id) {
 ```
 
 ### 📱 4. Mobil Safe-Area (Çentik) Korumalı Navigasyon Barı
-TellaKitap, mobil ekranlarda yerel (native) bir mobil uygulama akışkanlığına sahiptir.
+Dopdolu, mobil ekranlarda yerel (native) bir mobil uygulama akışkanlığına sahiptir.
 *   Alt navigasyon barı, iPhone çentiği gibi modern ekran çıkıntılarını otomatik olarak algılar ve CSS `env(safe-area-inset-bottom)` özelliğiyle konumunu dinamik olarak yukarı kaydırır.
 *   Sayfalar arasında gezinirken aktif sayfayı işaret eden küçük nokta (dot pointer), CSS geçiş kuralıyla yumuşak bir kayma efekti oluşturarak menü öğeleri arasında pürüzsüzce hareket eder.
 
@@ -148,7 +148,7 @@ TellaKitap, mobil ekranlarda yerel (native) bir mobil uygulama akışkanlığın
 ## 📂 Proje Yapısı ve Dosya Analizleri
 
 ```bash
-TellaKitap/
+Dopdolu/
 ├── index.html       # Ana SPA Giriş Kapısı (Görünümler, Sepet, Ödeme Modalı)
 ├── admin.html       # Bağımsız Yönetim Paneli (CRUD, Kupon, İstatistik)
 ├── detail.html      # SEO Dostu Dinamik Detay Sayfası Şablonu
@@ -162,7 +162,7 @@ TellaKitap/
 
 ### 📁 Temel Dosya İşlevleri
 1.  **[index.html](index.html):** Tek Sayfa Uygulama (SPA) mimarisine uygun şekilde tasarlanmıştır. `view-home`, `view-shop`, `view-about`, `view-contact` görünümlerini ve sepet paneli gibi global bileşenleri içerir.
-2.  **[app.js](app.js):** Tüm iş mantığının merkezidir. Başlangıçta 50 kitaplık `INITIAL_BOOKS` tohum veri tabanını kurar. Sepet, favoriler, kuponlar (`TELLA20`, `VAHIT10`) ve sipariş nesnelerini anlık olarak `localStorage` ile senkronize eder.
+2.  **[app.js](app.js):** Tüm iş mantığının merkezidir. Başlangıçta 50 kitaplık `INITIAL_BOOKS` tohum veri tabanını kurar. Sepet, favoriler, kuponlar (`DOPDOLU20`, `VAHIT10`) ve sipariş nesnelerini anlık olarak `localStorage` ile senkronize eder.
 3.  **[style.css](style.css):** Tüm responsive grid kuralları, cam efektleri, aydınlık/karanlık mod değişkenleri ve mikro-etkileşim animasyonlarını barındıran modern bir CSS kütüphanesi gibidir.
 4.  **[admin.html](admin.html):** Yönetici paneli arayüzüdür. Ürün Ekleme/Silme/Güncelleme (CRUD), sipariş durumu kontrolü, kupon tanımlama ve satış istatistiklerini izleme fonksiyonlarını bağımsız bir login kapısı arkasında sunar.
 5.  **[detail.html](detail.html):** Kitapların detay bilgilerine doğrudan dışarıdan bağlantı veya arama motorları aracılığıyla erişilebilmesi için kurgulanmış SEO dostu dinamik şablondur. URL parametrelerini (`?id=...`) okuyarak ilgili kitabı yükler.
@@ -195,13 +195,13 @@ Projeyi tamamen ücretsiz bir şekilde canlıya almak için:
 1.  Kodlarınızı GitHub deponuza gönderin:
     ```bash
     git add .
-    git commit -m "feat: TellaKitap premium responsive arayüz"
+    git commit -m "feat: Dopdolu premium responsive arayüz"
     git push origin main
     ```
 2.  GitHub sayfanızda deponuzun **Settings** -> **Pages** menüsüne gidin.
 3.  Source kısmını **Deploy from a branch** olarak seçin.
 4.  Branch alanından **main** dalını ve klasör olarak **/(root)** seçerek **Save** butonuna tıklayın.
-5.  Siteniz kısa süre içinde `https://kullaniciadi.github.io/TellaKitap/` adresinde yayına açılacaktır.
+5.  Siteniz kısa süre içinde `https://kullaniciadi.github.io/Dopdolu/` adresinde yayına açılacaktır.
 
 ---
 
@@ -214,15 +214,15 @@ Bu proje, **Vahit Keskin Showcase Project** kapsamında portföy, UI/UX tasarım
 <details>
   <summary>🇬🇧 Click here for English Translation (Click to expand)</summary>
 
-  # 📖 TellaKitap — Modern, Premium & Extraordinary Digital Bookstore
+  # 📖 Dopdolu — Modern, Premium & Extraordinary Digital Bookstore
 
-  **TellaKitap** is a premium online bookstore platform developed entirely from scratch using vanilla web standards (HTML5, CSS3, ES6+ JavaScript) **without using any external libraries or frameworks** (such as React, Vue, Tailwind, Bootstrap, etc.). 
+  **Dopdolu** is a premium online bookstore platform developed entirely from scratch using vanilla web standards (HTML5, CSS3, ES6+ JavaScript) **without using any external libraries or frameworks** (such as React, Vue, Tailwind, Bootstrap, etc.). 
 
   It blends aesthetic details with core e-commerce functionalities, boasting a sleek Glassmorphism UI, hardware-accelerated transitions, 3D CSS payment simulations, an HSL-based dynamic light/dark theme engine, and safe-area notch support for mobile navigation.
 
   ## 🚀 Live Demo
   Visit the live deployment here:
-  🔗 **[TellaKitap Live Demo Link](https://vahitkeskin.github.io/TellaKitap/)**
+  🔗 **[Dopdolu Live Demo Link](https://vahitkeskin.github.io/Dopdolu/)**
 
   ## 🎨 Design System & Color Palette
   The design utilizes dynamic HSL CSS custom variables, ensuring high accessibility contrast in both Light and Dark modes. Panels leverage `backdrop-filter: blur(20px)` and subtle borders to construct high-fidelity glassy panels.

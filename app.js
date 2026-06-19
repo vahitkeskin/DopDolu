@@ -1239,7 +1239,7 @@ function generateSVGBookCover(title, author, category, id) {
 }
 
 function getBooks() {
-  const saved = localStorage.getItem("tella-books-catalog");
+  const saved = localStorage.getItem("dopdolu-books-catalog");
   let catalog;
   if (!saved) {
     catalog = INITIAL_BOOKS;
@@ -1276,7 +1276,7 @@ function getBooks() {
   });
 
   if (!saved || modified || catalog.length === INITIAL_BOOKS.length) {
-    localStorage.setItem("tella-books-catalog", JSON.stringify(catalog));
+    localStorage.setItem("dopdolu-books-catalog", JSON.stringify(catalog));
   }
   return catalog;
 }
@@ -1288,7 +1288,7 @@ function saveBooks(catalog) {
       book.cover = generateSVGBookCover(book.title, book.author, book.category, book.id);
     }
   });
-  localStorage.setItem("tella-books-catalog", JSON.stringify(catalog));
+  localStorage.setItem("dopdolu-books-catalog", JSON.stringify(catalog));
 }
 
 function getOrders() {
@@ -1297,9 +1297,9 @@ function getOrders() {
     { id: "TL-128475", name: "Zeynep Demir", total: 99.90, date: "24.05.2026", address: "Karşıyaka, İzmir", status: "shipped" },
     { id: "TL-983748", name: "Alperen Şahin", total: 139.90, date: "24.05.2026", address: "Çankaya, Ankara", status: "pending" }
   ];
-  const saved = localStorage.getItem("tella-orders");
+  const saved = localStorage.getItem("dopdolu-orders");
   if (!saved) {
-    localStorage.setItem("tella-orders", JSON.stringify(defaultOrders));
+    localStorage.setItem("dopdolu-orders", JSON.stringify(defaultOrders));
     return defaultOrders;
   }
   try {
@@ -1310,17 +1310,17 @@ function getOrders() {
 }
 
 function saveOrders(orders) {
-  localStorage.setItem("tella-orders", JSON.stringify(orders));
+  localStorage.setItem("dopdolu-orders", JSON.stringify(orders));
 }
 
 function getCoupons() {
   const defaultCoupons = [
-    { code: "TELLA20", value: 20 },
+    { code: "DOPDOLU20", value: 20 },
     { code: "BEDAVAKARGO", value: 0 }
   ];
-  const saved = localStorage.getItem("tella-coupons");
+  const saved = localStorage.getItem("dopdolu-coupons");
   if (!saved) {
-    localStorage.setItem("tella-coupons", JSON.stringify(defaultCoupons));
+    localStorage.setItem("dopdolu-coupons", JSON.stringify(defaultCoupons));
     return defaultCoupons;
   }
   try {
@@ -1331,7 +1331,7 @@ function getCoupons() {
 }
 
 function saveCoupons(coupons) {
-  localStorage.setItem("tella-coupons", JSON.stringify(coupons));
+  localStorage.setItem("dopdolu-coupons", JSON.stringify(coupons));
 }
 
 // --- GLOBAL SHARED DATA INIT ---
@@ -1362,7 +1362,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // --- THEME MANAGEMENT ---
 function initTheme() {
-  let savedTheme = localStorage.getItem("tella-theme");
+  let savedTheme = localStorage.getItem("dopdolu-theme");
   if (!savedTheme) {
     const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
     savedTheme = prefersDark ? "dark" : "light";
@@ -1373,7 +1373,7 @@ function initTheme() {
 
   // Listen for system theme changes in real-time
   window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-    if (!localStorage.getItem("tella-theme")) {
+    if (!localStorage.getItem("dopdolu-theme")) {
       const newTheme = e.matches ? "dark" : "light";
       state.theme = newTheme;
       document.documentElement.setAttribute("data-theme", newTheme);
@@ -1385,7 +1385,7 @@ function initTheme() {
 function toggleTheme() {
   state.theme = state.theme === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", state.theme);
-  localStorage.setItem("tella-theme", state.theme);
+  localStorage.setItem("dopdolu-theme", state.theme);
   updateThemeIcon();
 }
 
@@ -1398,7 +1398,7 @@ function updateThemeIcon() {
 
 // --- WISHLIST MANAGEMENT ---
 function loadWishlist() {
-  const saved = localStorage.getItem("tella-wishlist");
+  const saved = localStorage.getItem("dopdolu-wishlist");
   if (saved) {
     try {
       state.wishlist = JSON.parse(saved);
@@ -1410,7 +1410,7 @@ function loadWishlist() {
 }
 
 function saveWishlist() {
-  localStorage.setItem("tella-wishlist", JSON.stringify(state.wishlist));
+  localStorage.setItem("dopdolu-wishlist", JSON.stringify(state.wishlist));
   renderWishlist();
 }
 
@@ -1501,7 +1501,7 @@ function addFromWishlistToCart(bookId) {
 
 // --- CART STATE MANAGERS ---
 function loadCart() {
-  const savedCart = localStorage.getItem("tella-cart");
+  const savedCart = localStorage.getItem("dopdolu-cart");
   if (savedCart) {
     try {
       state.cart = JSON.parse(savedCart);
@@ -1512,7 +1512,7 @@ function loadCart() {
 }
 
 function saveCart() {
-  localStorage.setItem("tella-cart", JSON.stringify(state.cart));
+  localStorage.setItem("dopdolu-cart", JSON.stringify(state.cart));
   renderCart();
 }
 
@@ -2850,7 +2850,7 @@ function handleAddBookSubmit(e) {
   const category = document.getElementById("ab-category").value;
   const price = parseFloat(document.getElementById("ab-price").value);
   const discount = document.getElementById("ab-discount").value ? parseFloat(document.getElementById("ab-discount").value) : null;
-  const publisher = document.getElementById("ab-publisher").value.trim() || "TellaKitap Yayınları";
+  const publisher = document.getElementById("ab-publisher").value.trim() || "Dopdolu Yayınları";
   const pages = parseInt(document.getElementById("ab-pages").value) || 200;
   const year = parseInt(document.getElementById("ab-year").value) || 2026;
   const isbn = document.getElementById("ab-isbn").value.trim() || "978-605-000-00-0";
