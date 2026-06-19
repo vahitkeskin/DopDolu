@@ -1129,6 +1129,446 @@ const INITIAL_BOOKS = [
     badgeType: "sale",
     description: "Yıldızların üstünde yürüyen ve geceleri çocuklara en güzel masalları üfleyen pamuktan yapılmış koyunların masalı.",
     reviews: []
+  },
+  {
+    id: 51,
+    title: "Classic Leather Notebook",
+    author: "Moleskine",
+    category: "Defter",
+    price: 349.90,
+    discountPrice: 299.90,
+    rating: 4.8,
+    cover: "",
+    publisher: "Moleskine İtalya",
+    pages: 240,
+    year: 2026,
+    isbn: "MS-8051234",
+    translator: "Çizgili (Lined)",
+    language: "Menşei: İtalya",
+    binding: "Deri Sert Kapak",
+    stock: 50,
+    badge: "Premium Klasik",
+    badgeType: "hot",
+    description: "Moleskine kalitesiyle efsaneleşmiş sert deri kapaklı çizgili defter. Mürekkep dağıtmayan asitsiz fildişi sayfalar ve lastikli şık cilt tasarımı.",
+    reviews: []
+  },
+  {
+    id: 52,
+    title: "Bullet Journal Edition",
+    author: "Leuchtturm1917",
+    category: "Defter",
+    price: 399.00,
+    discountPrice: null,
+    rating: 4.9,
+    cover: "",
+    publisher: "Leuchtturm Almanya",
+    pages: 250,
+    year: 2026,
+    isbn: "LT-4012932",
+    translator: "Noktalı (Dotted)",
+    language: "Menşei: Almanya",
+    binding: "Sert Bez Kapak",
+    stock: 35,
+    badge: "Bullet Journal",
+    badgeType: "hot",
+    description: "Planlama ve yaratıcı günlük tutma meraklıları için özel noktalı sayfa düzeni. Sayfa numaraları, indeks ve çift ayraçlı kurdelesi ile mükemmel düzenleyici.",
+    reviews: []
+  },
+  {
+    id: 53,
+    title: "MD Paper Minimalist",
+    author: "Midori",
+    category: "Defter",
+    price: 245.00,
+    discountPrice: 219.00,
+    rating: 4.7,
+    cover: "",
+    publisher: "Midori Japonya",
+    pages: 176,
+    year: 2025,
+    isbn: "MD-4972412",
+    translator: "Boş (Blank)",
+    language: "Menşei: Japonya",
+    binding: "İplik Dikişli",
+    stock: 25,
+    badge: "Minimalist",
+    badgeType: "",
+    description: "Japon kağıt işçiliğinin şaheseri. Kalem ucunun kağıtla buluştuğunda hissettirdiği o eşsiz dokunma hissiyatı için özel üretilmiş minimalist boş defter.",
+    reviews: []
+  },
+  {
+    id: 54,
+    title: "Rhodia Webnotebook",
+    author: "Rhodia",
+    category: "Defter",
+    price: 285.00,
+    discountPrice: null,
+    rating: 4.6,
+    cover: "",
+    publisher: "Rhodia Fransa",
+    pages: 192,
+    year: 2025,
+    isbn: "RH-3031123",
+    translator: "Noktalı (Dotted)",
+    language: "Menşei: Fransa",
+    binding: "Suni Deri Kapak",
+    stock: 40,
+    badge: "Turuncu Efsane",
+    badgeType: "sale",
+    description: "Rhodia'nın efsanevi 90g fildişi kadife kağıtları ile donatılmış, yumuşak suni deri kapaklı şık turuncu defter.",
+    reviews: []
+  },
+  {
+    id: 55,
+    title: "Tomoe River Notebook",
+    author: "Tomoe River",
+    category: "Defter",
+    price: 450.00,
+    discountPrice: 389.00,
+    rating: 5.0,
+    cover: "",
+    publisher: "Sakae Japonya",
+    pages: 368,
+    year: 2026,
+    isbn: "TR-4951120",
+    translator: "Kareli (Grid)",
+    language: "Menşei: Japonya",
+    binding: "Yumuşak Kapak",
+    stock: 15,
+    badge: "Koleksiyoner",
+    badgeType: "hot",
+    description: "Dünyanın en ince ama dolma kalem mürekkebini arkaya asla geçirmeyen ünlü 52gsm Tomoe River kağıdı kullanılarak üretilmiş elit defter.",
+    reviews: []
+  },
+  {
+    id: 56,
+    title: "Safari Fountain Pen",
+    author: "Lamy",
+    category: "Kalem",
+    price: 495.00,
+    discountPrice: 420.00,
+    rating: 4.8,
+    cover: "",
+    publisher: "Lamy Almanya",
+    pages: 1,
+    year: 2026,
+    isbn: "LM-4011222",
+    translator: "Uç: İnce (F)",
+    language: "Menşei: Almanya",
+    binding: "ABS Plastik Kasa",
+    stock: 60,
+    badge: "Tasarım Ödüllü",
+    badgeType: "hot",
+    description: "Alman mühendisliği ve ikonik tasarımıyla dolma kalem severlerin vazgeçilmezi. Ergonomik tutuş alanı ve dayanıklı gövdesiyle günlük yazım için ideal.",
+    reviews: []
+  },
+  {
+    id: 57,
+    title: "Sport Classic Fountain",
+    author: "Kaweco",
+    category: "Kalem",
+    price: 680.00,
+    discountPrice: null,
+    rating: 4.9,
+    cover: "",
+    publisher: "Kaweco Almanya",
+    pages: 1,
+    year: 2025,
+    isbn: "KW-4250012",
+    translator: "Uç: Orta (M)",
+    language: "Menşei: Almanya",
+    binding: "Sekizgen Kasa",
+    stock: 20,
+    badge: "Cep Boyu Klasik",
+    badgeType: "hot",
+    description: "1935'ten beri değişmeyen tasarımıyla cep boyu dolma kalem. Kapalıyken sadece 10.5 cm olan bu şık kalem, kapağı arkaya takıldığında standart kalem boyutuna ulaşır.",
+    reviews: []
+  },
+  {
+    id: 58,
+    title: "Metropolitan Silver",
+    author: "Pilot",
+    category: "Kalem",
+    price: 395.00,
+    discountPrice: 349.90,
+    rating: 4.7,
+    cover: "",
+    publisher: "Pilot Japonya",
+    pages: 1,
+    year: 2025,
+    isbn: "PL-4902505",
+    translator: "Uç: İnce (F)",
+    language: "Menşei: Japonya",
+    binding: "Pirinç Gövde",
+    stock: 30,
+    badge: "Zarif Metalik",
+    badgeType: "",
+    description: "Pürüzsüz yazım kalitesiyle bilinen metalik pirinç gövdeli, şık taşıma kutulu elit Japon dolma kalemi.",
+    reviews: []
+  },
+  {
+    id: 59,
+    title: "Rotring 600 Pencil",
+    author: "rOtring",
+    category: "Kalem",
+    price: 450.00,
+    discountPrice: null,
+    rating: 4.9,
+    cover: "",
+    publisher: "rOtring Almanya",
+    pages: 1,
+    year: 2026,
+    isbn: "RT-3501170",
+    translator: "Uç: 0.5 mm",
+    language: "Menşei: Almanya",
+    binding: "Pirinç Altıgen Gövde",
+    stock: 45,
+    badge: "Teknik Çizim Efsanesi",
+    badgeType: "hot",
+    description: "Tamamen metal altıgen gövdesi, tırtıklı grip alanı ve ağırlık dengesiyle çizim ve yazımda profesyonellerin birinci tercihi mekanik kurşun kalem.",
+    reviews: []
+  },
+  {
+    id: 60,
+    title: "Pigma Micron Set 6",
+    author: "Sakura",
+    category: "Kalem",
+    price: 265.00,
+    discountPrice: 229.00,
+    rating: 4.8,
+    cover: "",
+    publisher: "Sakura Japonya",
+    pages: 6,
+    year: 2025,
+    isbn: "SK-0845113",
+    translator: "Çeşitli Kalınlıklar",
+    language: "Menşei: Japonya",
+    binding: "Plastik Kasa",
+    stock: 80,
+    badge: "Arşivsel Mürekkep",
+    badgeType: "sale",
+    description: "Çizim, eskiz ve kaligrafi için suya, ışığa dayanıklı arşivsel pigment mürekkepli 6 farklı uç kalınlığında Japon fineliner kalem seti.",
+    reviews: []
+  },
+  {
+    id: 61,
+    title: "Fabriano Artistico Pad",
+    author: "Fabriano",
+    category: "Kağıt Grubu",
+    price: 320.00,
+    discountPrice: 275.00,
+    rating: 4.8,
+    cover: "",
+    publisher: "Fabriano İtalya",
+    pages: 20,
+    year: 2026,
+    isbn: "FB-8001300",
+    translator: "300g %100 Pamuk",
+    language: "Menşei: İtalya",
+    binding: "A4 Blok Bank",
+    stock: 25,
+    badge: "Profesyonel Sanat",
+    badgeType: "hot",
+    description: "Sulu boya sanatçıları için %100 pamuktan üretilmiş, dokulu, 300g ağırlığında asitsiz A4 sulu boya kağıt bloğu.",
+    reviews: []
+  },
+  {
+    id: 62,
+    title: "Triomphe Writing Pad",
+    author: "Clairefontaine",
+    category: "Kağıt Grubu",
+    price: 135.00,
+    discountPrice: null,
+    rating: 4.6,
+    cover: "",
+    publisher: "Clairefontaine Fransa",
+    pages: 50,
+    year: 2025,
+    isbn: "CF-3329680",
+    translator: "90g Ultra Pürüzsüz",
+    language: "Menşei: Fransa",
+    binding: "A5 Üstten Tutkallı",
+    stock: 50,
+    badge: "Mektup Kağıdı",
+    badgeType: "",
+    description: "Mektup ve dolma kalemle yazı yazmak için özel olarak cilalanmış, parlak beyaz renkte ultra pürüzsüz 90g A5 yazı kağıdı bloğu.",
+    reviews: []
+  },
+  {
+    id: 63,
+    title: "Origami Washi Paper",
+    author: "Toyo",
+    category: "Kağıt Grubu",
+    price: 165.00,
+    discountPrice: 145.00,
+    rating: 4.5,
+    cover: "",
+    publisher: "Toyo Japonya",
+    pages: 40,
+    year: 2026,
+    isbn: "TY-4902034",
+    translator: "15x15 cm Kare",
+    language: "Menşei: Japonya",
+    binding: "Özel Tasarım Paket",
+    stock: 40,
+    badge: "Geleneksel Desenler",
+    badgeType: "sale",
+    description: "Geleneksel Japon motifleriyle basılmış, kolay katlanan, yırtılmayan yüksek kaliteli orijinal Washi origami katlama kağıtları seti.",
+    reviews: []
+  },
+  {
+    id: 64,
+    title: "Campus Loose Leaf",
+    author: "Kokuyo",
+    category: "Kağıt Grubu",
+    price: 185.00,
+    discountPrice: null,
+    rating: 4.7,
+    cover: "",
+    publisher: "Kokuyo Japonya",
+    pages: 100,
+    year: 2025,
+    isbn: "KK-4901480",
+    translator: "B5 Noktalı Çizgili",
+    language: "Menşei: Japonya",
+    binding: "26 Delikli Yedek Kağıt",
+    stock: 70,
+    badge: "Akıllı Çizgili",
+    badgeType: "",
+    description: "Klasörler için 26 delikli yedek B5 kağıdı. Çizgiler üzerindeki ince noktalar sayesinde düzgün şemalar çizmeye elverişli akıllı sayfa yapısı.",
+    reviews: []
+  },
+  {
+    id: 65,
+    title: "Mnemosyne N180 Pad",
+    author: "Maruman",
+    category: "Kağıt Grubu",
+    price: 210.00,
+    discountPrice: 180.00,
+    rating: 4.9,
+    cover: "",
+    publisher: "Maruman Japonya",
+    pages: 70,
+    year: 2026,
+    isbn: "MM-4979093",
+    translator: "A4 Noktalı Izgara",
+    language: "Menşei: Japonya",
+    binding: "Üstten Spiral",
+    stock: 35,
+    badge: "Toplantı & Eskiz",
+    badgeType: "hot",
+    description: "Toplantı notları, zihin haritaları ve eskizler için yatay kullanıma uygun, üstten mikro perforeli koparılabilir A4 noktalı bloknot.",
+    reviews: []
+  },
+  {
+    id: 66,
+    title: "Lego Bonsai Tree",
+    author: "LEGO",
+    category: "Oyuncak & Hobi",
+    price: 950.00,
+    discountPrice: 849.00,
+    rating: 4.9,
+    cover: "",
+    publisher: "LEGO Danimarka",
+    pages: 878,
+    year: 2025,
+    isbn: "LG-5702016",
+    translator: "Yapım Parçaları Seti",
+    language: "Menşei: Danimarka",
+    binding: "Hobi Kutu",
+    stock: 12,
+    badge: "Yetişkin Hobi",
+    badgeType: "hot",
+    description: "Yeşil yapraklar veya pembe kiraz çiçekleri olarak kişiselleştirilebilen, saksısı ve ahşap görünümlü standıyla harika bir dekoratif Lego seti.",
+    reviews: []
+  },
+  {
+    id: 67,
+    title: "Wooden Clock Puzzle",
+    author: "Robotime",
+    category: "Oyuncak & Hobi",
+    price: 520.00,
+    discountPrice: 460.00,
+    rating: 4.8,
+    cover: "",
+    publisher: "Robotime Çin",
+    pages: 168,
+    year: 2026,
+    isbn: "RB-6946782",
+    translator: "3D Ahşap Kurulum",
+    language: "Menşei: Çin",
+    binding: "Lazer Kesim Kontrplak",
+    stock: 18,
+    badge: "3D Mekanik Ahşap",
+    badgeType: "hot",
+    description: "Lazer kesim ahşap plakalardan tutkal kullanmadan monte edilen, tamamlandığında gerçek bir saat gibi çalışan mekanik 3D yapboz kiti.",
+    reviews: []
+  },
+  {
+    id: 68,
+    title: "Steiff Classic Bear",
+    author: "Steiff",
+    category: "Oyuncak & Hobi",
+    price: 850.00,
+    discountPrice: null,
+    rating: 5.0,
+    cover: "",
+    publisher: "Steiff Almanya",
+    pages: 1,
+    year: 2024,
+    isbn: "ST-4001505",
+    translator: "El Yapımı Mohair",
+    language: "Menşei: Almanya",
+    binding: "Altın Düğmeli Kulak",
+    stock: 8,
+    badge: "Koleksiyonluk Oyuncak",
+    badgeType: "hot",
+    description: "Almanya'da el işçiliğiyle mohair tüyünden üretilen, kulağındaki tescilli altın düğmesiyle orijinal koleksiyonluk lüks oyuncak ayı.",
+    reviews: []
+  },
+  {
+    id: 69,
+    title: "Gelli Printing Kit",
+    author: "Gelli Arts",
+    category: "Oyuncak & Hobi",
+    price: 420.00,
+    discountPrice: 375.00,
+    rating: 4.7,
+    cover: "",
+    publisher: "Gelli Arts ABD",
+    pages: 3,
+    year: 2025,
+    isbn: "GA-8500201",
+    translator: "Monobaskı Seti",
+    language: "Menşei: ABD",
+    binding: "Hobi Baskı Plakası",
+    stock: 15,
+    badge: "Yaratıcı Sanat",
+    badgeType: "",
+    description: "Evde kendi desenli kağıtlarınızı basabilmeniz için esnek monobaskı jeli, merdane ve örnek akrilik boyaları içeren yaratıcı hobi seti.",
+    reviews: []
+  },
+  {
+    id: 70,
+    title: "Library Puzzle 1000",
+    author: "Ravensburger",
+    category: "Oyuncak & Hobi",
+    price: 295.00,
+    discountPrice: 249.90,
+    rating: 4.8,
+    cover: "",
+    publisher: "Ravensburger Almanya",
+    pages: 1000,
+    year: 2026,
+    isbn: "RV-4005556",
+    translator: "1000 Parça Yapboz",
+    language: "Menşei: Almanya",
+    binding: "Softclick Kilit",
+    stock: 22,
+    badge: "Koleksiyon Puzzle",
+    badgeType: "sale",
+    description: "Harika bir kütüphane illüstrasyonuna sahip, parlamayı önleyen yüzey kaplamalı ve birbirine mükemmel kilitlenen 1000 parçalık lüks yapboz.",
+    reviews: []
   }
 ];
 // --- SHARED STATE MANAGEMENT ---
@@ -1138,7 +1578,7 @@ let state = {
   activeView: "home",
   currentCategory: "Tümü",
   searchQuery: "",
-  maxPrice: 250,
+  maxPrice: 1000,
   minRating: [],
   sortBy: "relevance",
   theme: "dark",
@@ -1168,36 +1608,120 @@ function generateSVGBookCover(title, author, category, id) {
   ];
   
   const grad = gradients[id % gradients.length];
-  
-  // Create geometric art based on id
-  let geometricArt = "";
-  if (id % 5 === 0) {
-    geometricArt = `
-      <circle cx="150" cy="225" r="80" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
-      <circle cx="150" cy="225" r="60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-      <line x1="150" y1="100" x2="150" y2="350" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-      <line x1="50" y1="225" x2="250" y2="225" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  let customGraphic = "";
+
+  if (category === "Defter") {
+    customGraphic = `
+      <!-- Lined paper background representation -->
+      <g opacity="0.05">
+        <line x1="30" y1="100" x2="270" y2="100" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="130" x2="270" y2="130" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="160" x2="270" y2="160" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="190" x2="270" y2="190" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="220" x2="270" y2="220" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="250" x2="270" y2="250" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="280" x2="270" y2="280" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="310" x2="270" y2="310" stroke="#fff" stroke-width="1"/>
+        <line x1="30" y1="340" x2="270" y2="340" stroke="#fff" stroke-width="1"/>
+      </g>
+      <!-- Bookmark ribbon hanging from bottom -->
+      <path d="M 220 400 L 220 450 L 228 440 L 236 450 L 236 400 Z" fill="rgba(255,255,255,0.3)" />
+      <!-- Elastic Band -->
+      <rect x="245" y="15" width="10" height="420" fill="rgba(0,0,0,0.3)" rx="2" />
+      <rect x="246" y="15" width="8" height="420" fill="rgba(255,255,255,0.15)" rx="1" />
+      <!-- Notebook Cover Border -->
+      <rect x="15" y="15" width="270" height="420" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
     `;
-  } else if (id % 5 === 1) {
-    geometricArt = `
-      <rect x="75" y="150" width="150" height="150" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2" transform="rotate(45 150 225)"/>
-      <circle cx="150" cy="225" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+  } else if (category === "Kalem") {
+    customGraphic = `
+      <!-- Metallic circles in background -->
+      <circle cx="150" cy="225" r="90" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2" />
+      <circle cx="150" cy="225" r="70" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1" />
+      <!-- Sleek pen body drawing -->
+      <!-- Clip -->
+      <rect x="146" y="80" width="8" height="110" fill="rgba(255,255,255,0.4)" rx="4" />
+      <rect x="148" y="85" width="4" height="100" fill="rgba(255,255,255,0.6)" rx="2" />
+      <!-- Pen body -->
+      <rect x="135" y="110" width="30" height="220" fill="rgba(0,0,0,0.4)" rx="5" />
+      <rect x="138" y="110" width="24" height="220" fill="rgba(255,255,255,0.08)" rx="3" />
+      <!-- Metallic Grip Ring -->
+      <rect x="135" y="290" width="30" height="8" fill="rgba(255,255,255,0.5)" />
+      <!-- Pen tip (nib) -->
+      <path d="M 135 330 L 150 365 L 165 330 Z" fill="rgba(255,255,255,0.6)" />
+      <line x1="150" y1="330" x2="150" y2="360" stroke="rgba(0,0,0,0.5)" stroke-width="1.5" />
+      <circle cx="150" cy="345" r="2" fill="rgba(0,0,0,0.5)" />
+      <rect x="15" y="15" width="270" height="420" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
     `;
-  } else if (id % 5 === 2) {
-    geometricArt = `
-      <path d="M 150 120 L 230 280 L 70 280 Z" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
-      <circle cx="150" cy="225" r="40" fill="rgba(255,255,255,0.02)"/>
+  } else if (category === "Kağıt Grubu") {
+    customGraphic = `
+      <!-- Overlapping sheets drawing -->
+      <g transform="translate(10, 30)">
+        <!-- Back sheet tilted -->
+        <rect x="30" y="40" width="200" height="300" rx="4" fill="rgba(255,255,255,0.08)" transform="rotate(-5 130 190)" />
+        <!-- Middle sheet tilted -->
+        <rect x="40" y="30" width="200" height="300" rx="4" fill="rgba(255,255,255,0.12)" transform="rotate(3 140 180)" />
+        <!-- Front main sheet -->
+        <rect x="35" y="35" width="200" height="300" rx="4" fill="rgba(255,255,255,0.18)" />
+        <!-- Drawing canvas borders -->
+        <rect x="45" y="45" width="180" height="280" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+        <!-- Palette or subtle watercolor wash representation -->
+        <path d="M 60 200 C 80 180, 120 180, 140 220 C 160 260, 200 240, 210 280 L 210 320 L 60 320 Z" fill="rgba(255,255,255,0.04)" />
+      </g>
+      <!-- Top Spiral rings -->
+      <g opacity="0.4" transform="translate(0, 15)">
+        <circle cx="50" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="80" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="110" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="140" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="170" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="200" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="230" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+        <circle cx="260" cy="30" r="5" fill="none" stroke="#fff" stroke-width="2" />
+      </g>
+      <rect x="15" y="15" width="270" height="420" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
     `;
-  } else if (id % 5 === 3) {
-    geometricArt = `
-      <circle cx="110" cy="225" r="50" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
-      <circle cx="190" cy="225" r="50" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+  } else if (category === "Oyuncak & Hobi") {
+    customGraphic = `
+      <!-- Toy bricks or puzzle shapes -->
+      <g transform="translate(10, 30)">
+        <!-- Gear/Puzzle drawing -->
+        <circle cx="140" cy="195" r="55" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4" />
+        <circle cx="140" cy="195" r="35" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2" stroke-dasharray="8, 6" />
+        <!-- Inner star or puzzle block -->
+        <path d="M 140 165 L 148 185 L 170 185 L 152 198 L 160 220 L 140 207 L 120 220 L 128 198 L 110 185 L 132 185 Z" fill="rgba(255,255,255,0.12)" />
+        <!-- Small blocks -->
+        <rect x="70" y="270" width="30" height="30" rx="4" fill="rgba(255,255,255,0.06)" />
+        <circle cx="85" cy="285" r="5" fill="rgba(255,255,255,0.1)" />
+        <rect x="110" y="270" width="60" height="30" rx="4" fill="rgba(255,255,255,0.12)" />
+        <circle cx="125" cy="285" r="5" fill="rgba(255,255,255,0.15)" />
+        <circle cx="155" cy="285" r="5" fill="rgba(255,255,255,0.15)" />
+      </g>
+      <rect x="15" y="15" width="270" height="420" rx="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="2" />
     `;
   } else {
-    geometricArt = `
-      <line x1="50" y1="120" x2="250" y2="320" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
-      <line x1="50" y1="320" x2="250" y2="120" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
-      <circle cx="150" cy="220" r="70" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+    // Default Book Design
+    customGraphic = `
+      <!-- Geometric Art -->
+      ${id % 5 === 0 ? `
+        <circle cx="150" cy="225" r="80" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/>
+        <circle cx="150" cy="225" r="60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+        <line x1="150" y1="100" x2="150" y2="350" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+        <line x1="50" y1="225" x2="250" y2="225" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      ` : id % 5 === 1 ? `
+        <rect x="75" y="150" width="150" height="150" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2" transform="rotate(45 150 225)"/>
+        <circle cx="150" cy="225" r="50" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+      ` : id % 5 === 2 ? `
+        <path d="M 150 120 L 230 280 L 70 280 Z" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+        <circle cx="150" cy="225" r="40" fill="rgba(255,255,255,0.02)"/>
+      ` : id % 5 === 3 ? `
+        <circle cx="110" cy="225" r="50" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+        <circle cx="190" cy="225" r="50" fill="none" stroke="rgba(255,255,255,0.04)" stroke-width="1.5"/>
+      ` : `
+        <line x1="50" y1="120" x2="250" y2="320" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+        <line x1="50" y1="320" x2="250" y2="120" stroke="rgba(255,255,255,0.04)" stroke-width="2"/>
+        <circle cx="150" cy="220" r="70" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+      `}
+      <rect x="15" y="15" width="270" height="420" rx="6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
     `;
   }
 
@@ -1213,11 +1737,7 @@ function generateSVGBookCover(title, author, category, id) {
     <!-- Background -->
     <rect width="300" height="450" fill="url(#grad-${id})" />
     
-    <!-- Geometric Art -->
-    ${geometricArt}
-    
-    <!-- Inner Border -->
-    <rect x="15" y="15" width="270" height="420" rx="6" fill="none" stroke="rgba(255,255,255,0.12)" stroke-width="1.5" />
+    ${customGraphic}
     
     <!-- Category label -->
     <text x="150" y="55" fill="rgba(255,255,255,0.5)" font-family="system-ui, -apple-system, sans-serif" font-size="9" font-weight="700" letter-spacing="2" text-anchor="middle">${category.toUpperCase()}</text>
@@ -2533,6 +3053,38 @@ function bindDetailPageData(book) {
   document.getElementById("det-language").innerText = book.language || "Türkçe";
   document.getElementById("det-binding").innerText = book.binding || "Karton Kapak";
   document.getElementById("det-desc").innerText = book.description;
+
+  // Dynamic table labels based on category type
+  const stationeryCategories = ["Defter", "Kalem", "Kağıt Grubu", "Oyuncak & Hobi"];
+  const isStationery = stationeryCategories.includes(book.category);
+
+  const pubLbl = document.getElementById("det-publisher-lbl");
+  const yrLbl = document.getElementById("det-year-lbl");
+  const pgLbl = document.getElementById("det-pages-lbl");
+  const isbnLbl = document.getElementById("det-isbn-lbl");
+  const transLbl = document.getElementById("det-translator-lbl");
+  const langLbl = document.getElementById("det-language-lbl");
+  const bindLbl = document.getElementById("det-binding-lbl");
+
+  if (pubLbl && yrLbl && pgLbl && isbnLbl && transLbl && langLbl && bindLbl) {
+    if (isStationery) {
+      pubLbl.innerText = "Üretici / Marka";
+      yrLbl.innerText = "Model Yılı";
+      pgLbl.innerText = "Parça / Sayfa Sayısı";
+      isbnLbl.innerText = "Ürün Kodu";
+      transLbl.innerText = "Özellikler";
+      langLbl.innerText = "Menşei / Detay";
+      bindLbl.innerText = "Yapı / Malzeme";
+    } else {
+      pubLbl.innerText = "Yayınevi";
+      yrLbl.innerText = "Basım Yılı";
+      pgLbl.innerText = "Sayfa Sayısı";
+      isbnLbl.innerText = "ISBN";
+      transLbl.innerText = "Çevirmen";
+      langLbl.innerText = "Dil";
+      bindLbl.innerText = "Cilt Tipi";
+    }
+  }
 
   const stockBadge = document.getElementById("det-stock");
   if (book.stock > 10) {

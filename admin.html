@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Dopdolu | Yönetim Paneli</title>
+  <title>DopDolu | Yönetim Paneli</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Dopdolu Yönetim Paneli - Kitap, sipariş, yorum ve kupon yönetim sistemi.">
+  <meta name="description" content="DopDolu Yönetim Paneli - Ürün, sipariş, yorum ve kupon yönetim sistemi.">
   <meta name="author" content="Vahit Keskin">
   
   <!-- Fonts & Icons -->
@@ -24,7 +24,7 @@
       <div style="text-align: center; margin-bottom: 1.5rem;">
         <a href="index.html" class="logo" style="justify-content: center; margin-bottom: 1.2rem; display: flex; gap: 10px; font-size: 2rem; font-weight: 800; text-decoration: none; color: var(--text-primary); align-items: center;">
           <i class="fas fa-book-open" style="color: var(--accent-color); font-size: 1.8rem;"></i>
-          <span>Dop<span class="gradient-text">dolu</span></span>
+          <span>Dop<span class="gradient-text">Dolu</span></span>
         </a>
         <h2 class="gradient-text" style="font-weight: 900; font-size: 1.6rem; margin-bottom: 0.4rem; letter-spacing: -0.5px;">Yönetici Girişi</h2>
         <p style="color: var(--text-secondary); font-size: 0.85rem;">Sistem paneline erişmek için kimlik doğrulaması gereklidir.</p>
@@ -57,7 +57,7 @@
     <div class="container">
       <a href="index.html" class="logo">
         <i class="fas fa-book-open"></i>
-        <span>Dop<span class="gradient-text">dolu</span></span>
+        <span>Dop<span class="gradient-text">Dolu</span></span>
       </a>
 
       <nav>
@@ -89,7 +89,7 @@
         <i class="fas fa-chart-line"></i> Genel Durum
       </button>
       <button class="admin-side-link admin-tab-btn" data-tab="books">
-        <i class="fas fa-book-open"></i> Kitap Yönetimi
+        <i class="fas fa-book-open"></i> Ürün Yönetimi
       </button>
       <button class="admin-side-link admin-tab-btn" data-tab="orders">
         <i class="fas fa-shopping-cart"></i> Siparişler
@@ -124,10 +124,10 @@
           </div>
           <div class="stat-card glass-panel">
             <div class="stat-card-left">
-              <span>Katalog Kitapları</span>
+              <span>Katalog Ürünleri</span>
               <span id="stat-total-books">0</span><span class="trend-badge trend-up" style="margin-top:0.4rem; font-size:0.75rem;"><i class="fas fa-arrow-up"></i> 1 Yeni</span>
             </div>
-            <div class="stat-card-icon"><i class="fas fa-book"></i></div>
+            <div class="stat-card-icon"><i class="fas fa-box"></i></div>
           </div>
           <div class="stat-card glass-panel">
             <div class="stat-card-left">
@@ -147,21 +147,21 @@
         <!-- Section 2: Books Catalog Panel -->
         <div id="admin-sec-books" class="admin-panel-section glass-panel" style="padding:2.5rem;">
           <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem; gap:1rem; flex-wrap:wrap;">
-            <h3 style="font-weight:800;" class="gradient-text">Katalogdaki Kitaplar</h3>
-            <button id="admin-add-book-btn" class="gradient-btn" style="padding:0.6rem 1.2rem; font-size:0.85rem;"><i class="fas fa-plus"></i> Yeni Kitap Ekle</button>
+            <h3 style="font-weight:800;" class="gradient-text">Katalogdaki Ürünler</h3>
+            <button id="admin-add-book-btn" class="gradient-btn" style="padding:0.6rem 1.2rem; font-size:0.85rem;"><i class="fas fa-plus"></i> Yeni Ürün Ekle</button>
           </div>
           <div class="table-wrapper" style="overflow-x:auto;">
             <table class="admin-table">
               <thead>
                 <tr>
                   <th>Kapak</th>
-                  <th>Kitap Adı</th>
-                  <th>Yazar</th>
+                  <th>Ürün Adı</th>
+                  <th>Yazar / Marka</th>
                   <th>Kategori</th>
                   <th>Fiyat</th>
                   <th>İndirim</th>
                   <th>Stok</th>
-                  <th>ISBN</th>
+                  <th>Kodu / ISBN</th>
                   <th>İşlemler</th>
                 </tr>
               </thead>
@@ -196,12 +196,12 @@
 
         <!-- Section 4: Review Moderation Panel -->
         <div id="admin-sec-comments" class="admin-panel-section glass-panel" style="padding:2.5rem;">
-          <h3 style="margin-bottom:1.5rem; font-weight:800;" class="gradient-text">Okur Yorumları Moderasyonu</h3>
+          <h3 style="margin-bottom:1.5rem; font-weight:800;" class="gradient-text">Ürün Yorumları Moderasyonu</h3>
           <div class="table-wrapper" style="overflow-x:auto;">
             <table class="admin-table">
               <thead>
                 <tr>
-                  <th>Kitap</th>
+                  <th>Ürün</th>
                   <th>Yorum Yapan</th>
                   <th>Puan</th>
                   <th>Mesaj</th>
@@ -256,7 +256,7 @@
   <footer>
     <div class="container">
       <div class="footer-bottom" style="margin-top: 0; padding: 2rem 0; border-top: 1px solid var(--border-color);">
-        <p>&copy; 2026 Dopdolu Yönetim Paneli. Tüm Hakları Saklıdır.</p>
+        <p>&copy; 2026 DopDolu Yönetim Paneli. Tüm Hakları Saklıdır.</p>
         <p>Vahit Keskin Showcase Project</p>
       </div>
     </div>
@@ -265,25 +265,29 @@
   <!-- --- ADMIN: ADD/EDIT BOOK DIALOG MODAL --- -->
   <dialog id="add-book-dialog" closedby="any" aria-labelledby="add-book-title" style="max-width:720px; width: 90%;">
     <button id="close-add-book-btn" class="dialog-close" title="Kapat"><i class="fas fa-times"></i></button>
-    <h2 id="add-book-title" class="gradient-text" style="font-weight: 800; font-size: 1.8rem; margin-bottom: 1.5rem; letter-spacing:-0.5px;">Kataloğa Kitap Ekle</h2>
+    <h2 id="add-book-title" class="gradient-text" style="font-weight: 800; font-size: 1.8rem; margin-bottom: 1.5rem; letter-spacing:-0.5px;">Kataloğa Ürün Ekle</h2>
     
     <form id="add-book-form" class="contact-form admin-dialog-form" style="display:grid; grid-template-columns: 1fr 1fr; gap:1.2rem;">
       <div class="form-group full-width" style="grid-column: span 2; margin-bottom: 0;">
-        <label for="ab-title">Kitap Adı</label>
-        <input type="text" id="ab-title" class="form-control" placeholder="Örn: Neon Odyssey" required autocomplete="off">
+        <label for="ab-title">Ürün Adı</label>
+        <input type="text" id="ab-title" class="form-control" placeholder="Örn: Neon Odyssey veya Lamy Safari" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-author">Yazar</label>
-        <input type="text" id="ab-author" class="form-control" placeholder="Örn: Elara Vance" required autocomplete="off">
+        <label for="ab-author">Yazar / Marka</label>
+        <input type="text" id="ab-author" class="form-control" placeholder="Örn: Elara Vance veya Lamy" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
         <label for="ab-category">Kategori</label>
         <select id="ab-category" class="sort-select" style="padding:0.75rem;">
           <option value="Bilim Kurgu">Bilim Kurgu</option>
-          <option value="Doğa & Şiir">Doğa & Şiir</option>
           <option value="Felsefe">Felsefe</option>
           <option value="Gizem & Gerilim">Gizem & Gerilim</option>
           <option value="Tasarım & Teknoloji">Tasarım & Teknoloji</option>
+          <option value="Çocuk Kitapları">Çocuk Kitapları</option>
+          <option value="Defter">Defter</option>
+          <option value="Kalem">Kalem</option>
+          <option value="Kağıt Grubu">Kağıt Grubu</option>
+          <option value="Oyuncak & Hobi">Oyuncak & Hobi</option>
         </select>
       </div>
       <div class="form-group" style="margin-bottom: 0;">
@@ -295,34 +299,39 @@
         <input type="number" id="ab-discount" class="form-control" placeholder="Örn: 99.90" min="0" step="0.01" autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-publisher">Yayınevi</label>
-        <input type="text" id="ab-publisher" class="form-control" placeholder="Örn: Kozmos Yayınları" required autocomplete="off">
+        <label for="ab-publisher">Yayınevi / Üretici</label>
+        <input type="text" id="ab-publisher" class="form-control" placeholder="Örn: Kozmos Yayınları veya Lamy Gmbh" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-isbn">ISBN Kodu</label>
-        <input type="text" id="ab-isbn" class="form-control" placeholder="Örn: 978-605-234-12-1" required autocomplete="off">
+        <label for="ab-isbn">ISBN / Ürün Kodu</label>
+        <input type="text" id="ab-isbn" class="form-control" placeholder="Örn: 978-605-234-12-1 veya LM-4011222" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-pages">Sayfa Sayısı</label>
-        <input type="number" id="ab-pages" class="form-control" placeholder="320" required autocomplete="off">
+        <label for="ab-pages">Sayfa / Parça / Adet</label>
+        <input type="text" id="ab-pages" class="form-control" placeholder="Örn: 320 sayfa veya 1 adet" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-year">Basım Yılı</label>
+        <label for="ab-year">Basım / Model Yılı</label>
         <input type="number" id="ab-year" class="form-control" placeholder="2026" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-translator">Çevirmen (Opsiyonel)</label>
-        <input type="text" id="ab-translator" class="form-control" placeholder="Örn: Cemil Meriç Altan" autocomplete="off">
+        <label for="ab-translator">Çevirmen / Özellikler (Opsiyonel)</label>
+        <input type="text" id="ab-translator" class="form-control" placeholder="Örn: Çevirmen veya Uç: İnce (F)" autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-language">Dil</label>
-        <input type="text" id="ab-language" class="form-control" value="Türkçe" required autocomplete="off">
+        <label for="ab-language">Dil / Menşei</label>
+        <input type="text" id="ab-language" class="form-control" placeholder="Örn: Türkçe veya Menşei: Almanya" required autocomplete="off">
       </div>
       <div class="form-group" style="margin-bottom: 0;">
-        <label for="ab-binding">Cilt Tipi</label>
+        <label for="ab-binding">Cilt Tipi / Kasa</label>
         <select id="ab-binding" class="sort-select" style="padding:0.75rem;">
           <option value="Karton Kapak">Karton Kapak</option>
           <option value="Ciltli">Ciltli</option>
+          <option value="Sert Kapak">Sert Kapak</option>
+          <option value="Yumuşak Kapak">Yumuşak Kapak</option>
+          <option value="Plastik Kasa">Plastik Kasa</option>
+          <option value="Metal Kasa">Metal Kasa</option>
+          <option value="Diğer / Yok">Diğer / Yok</option>
         </select>
       </div>
       <div class="form-group" style="margin-bottom: 0;">
@@ -330,11 +339,11 @@
         <input type="number" id="ab-stock" class="form-control" placeholder="45" required autocomplete="off">
       </div>
       <div class="form-group full-width" style="grid-column: span 2; margin-bottom: 0;">
-        <label for="ab-desc">Kitap Açıklaması</label>
-        <textarea id="ab-desc" class="form-control" rows="3" placeholder="Kitabın konusu, arka kapak yazısı..." required></textarea>
+        <label for="ab-desc">Ürün Açıklaması</label>
+        <textarea id="ab-desc" class="form-control" rows="3" placeholder="Ürün açıklaması veya kitabın konusu..." required></textarea>
       </div>
       
-      <button type="submit" class="gradient-btn full-width" style="grid-column: span 2; margin-top:0.5rem; font-weight: 700; border-radius:10px;"><i class="fas fa-plus"></i> Kitabı Kataloğa Kaydet</button>
+      <button type="submit" class="gradient-btn full-width" style="grid-column: span 2; margin-top:0.5rem; font-weight: 700; border-radius:10px;"><i class="fas fa-plus"></i> Ürünü Kataloğa Kaydet</button>
     </form>
   </dialog>
 

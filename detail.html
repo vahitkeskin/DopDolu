@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Dopdolu | Eser Detayları</title>
+  <title>DopDolu | Ürün Detayları</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Dopdolu - Kitap Detayları ve Okur Yorumları. Seçkin eserleri en ince detayına kadar inceleyin, yorumları okuyun ve güvenle satın alın.">
-  <meta name="keywords" content="kitap detay, dopdolu, kitap incelemesi, kitap yorumları, kitap siparişi">
+  <meta name="description" content="DopDolu - Ürün Detayları ve Yorumlar. Seçkin kitap, kırtasiye ve oyuncak ürünlerini en ince detayına kadar inceleyin, yorumları okuyun ve güvenle satın alın.">
+  <meta name="keywords" content="ürün detay, dopdolu, kırtasiye, dolma kalem, oyuncak, kitap incelemesi, müşteri yorumları, sipariş">
   <meta name="author" content="Vahit Keskin">
   
   <!-- Fonts & Icons -->
@@ -23,14 +23,14 @@
     <div class="container">
       <a href="index.html" class="logo">
         <i class="fas fa-book-open"></i>
-        <span>Dop<span class="gradient-text">dolu</span></span>
+        <span>Dop<span class="gradient-text">Dolu</span></span>
       </a>
 
       <!-- Navigation Links (Normal Anchors with SPA routing targets) -->
       <nav>
         <ul class="main-nav">
           <li><a href="index.html#home" class="nav-link">Ana Sayfa</a></li>
-          <li><a href="index.html#shop" class="nav-link">Kitaplar</a></li>
+          <li><a href="index.html#shop" class="nav-link">Ürünler</a></li>
           <li><a href="index.html#about" class="nav-link">Hakkımızda</a></li>
           <li><a href="index.html#contact" class="nav-link">İletişim</a></li>
           <li><a href="admin.html" class="nav-link"><i class="fas fa-lock-open" style="font-size:0.8rem; margin-right:2px;"></i> Panel</a></li>
@@ -39,7 +39,7 @@
       
       <div class="search-wrapper">
         <i class="fas fa-search search-icon"></i>
-        <input type="search" id="search-input" class="search-bar" placeholder="Kitap veya yazar arayın..." autocomplete="off">
+        <input type="search" id="search-input" class="search-bar" placeholder="Ürün, marka veya kitap arayın..." autocomplete="off">
         <div id="search-suggestions" class="search-suggestions"></div>
       </div>
       
@@ -69,7 +69,7 @@
   <div id="mobile-search-overlay" class="mobile-search-overlay">
     <div class="container">
       <i class="fas fa-search search-icon"></i>
-      <input type="search" id="mobile-search-input" class="search-bar" placeholder="Kitap veya yazar arayın..." autocomplete="off">
+      <input type="search" id="mobile-search-input" class="search-bar" placeholder="Ürün, marka veya kitap arayın..." autocomplete="off">
       <div id="mobile-search-suggestions" class="search-suggestions"></div>
     </div>
   </div>
@@ -87,35 +87,35 @@
         <table class="detail-meta-table">
           <tbody>
             <tr>
-              <td>Kategori</td>
+              <td id="det-category-lbl">Kategori</td>
               <td id="det-category">-</td>
             </tr>
             <tr>
-              <td>Yayınevi</td>
+              <td id="det-publisher-lbl">Yayınevi</td>
               <td id="det-publisher">-</td>
             </tr>
             <tr>
-              <td>Basım Yılı</td>
+              <td id="det-year-lbl">Basım Yılı</td>
               <td id="det-year">-</td>
             </tr>
             <tr>
-              <td>Sayfa Sayısı</td>
+              <td id="det-pages-lbl">Sayfa Sayısı</td>
               <td id="det-pages">-</td>
             </tr>
             <tr>
-              <td>ISBN</td>
+              <td id="det-isbn-lbl">ISBN</td>
               <td id="det-isbn">-</td>
             </tr>
             <tr>
-              <td>Çevirmen</td>
+              <td id="det-translator-lbl">Çevirmen</td>
               <td id="det-translator">-</td>
             </tr>
             <tr>
-              <td>Dil</td>
+              <td id="det-language-lbl">Dil</td>
               <td id="det-language">-</td>
             </tr>
             <tr>
-              <td>Cilt Tipi</td>
+              <td id="det-binding-lbl">Cilt Tipi</td>
               <td id="det-binding">-</td>
             </tr>
           </tbody>
@@ -135,7 +135,7 @@
         </div>
         
         <div class="detail-desc-block">
-          <h3 style="font-size: 1.15rem; font-weight:800; color:var(--text-primary); margin-bottom:0.8rem;">Kitap Açıklaması</h3>
+          <h3 style="font-size: 1.15rem; font-weight:800; color:var(--text-primary); margin-bottom:0.8rem;">Ürün Açıklaması</h3>
           <p id="det-desc">-</p>
         </div>
         
@@ -158,7 +158,7 @@
         
         <!-- Reviews Section -->
         <div class="dialog-reviews" style="margin-top:2rem;">
-          <h3 style="font-size:1.5rem; font-weight:800; margin-bottom:1.5rem; border-bottom:1px solid var(--border-color); padding-bottom:0.5rem;">Okur Yorumları</h3>
+          <h3 style="font-size:1.5rem; font-weight:800; margin-bottom:1.5rem; border-bottom:1px solid var(--border-color); padding-bottom:0.5rem;">Müşteri Yorumları</h3>
           <div id="det-reviews-list">
             <!-- Review items -->
           </div>
@@ -184,7 +184,7 @@
             </div>
             <div class="form-group" style="margin-bottom:0;">
               <label for="d-rev-comment">Mesajınız</label>
-              <textarea id="d-rev-comment" class="form-control" placeholder="Kitap hakkında düşünceleriniz, karakter incelemeleriniz..." rows="4" required></textarea>
+              <textarea id="d-rev-comment" class="form-control" placeholder="Ürün hakkında düşünceleriniz, deneyimleriniz..." rows="4" required></textarea>
             </div>
             <button type="submit" class="gradient-btn" style="width: fit-content; padding: 0.75rem 2rem; align-self: flex-end; border-radius:10px;">
               Yorum Yap
@@ -197,7 +197,7 @@
 
     <!-- Dynamic Similar Books Carousel -->
     <section class="similar-section">
-      <h3 style="font-size:1.8rem; font-weight:800;"><span class="gradient-text">Benzer</span> Eserler</h3>
+      <h3 style="font-size:1.8rem; font-weight:800;"><span class="gradient-text">Benzer</span> Ürünler</h3>
       <div id="similar-grid" class="similar-grid">
         <!-- Similar book cards -->
       </div>
@@ -238,8 +238,8 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <h3>Dop<span class="gradient-text">dolu</span></h3>
-          <p>Eşsiz kurguların, edebi başyapıtların ve göz alıcı tasarımların bir araya geldiği dijital kitap dünyası.</p>
+          <h3>Dop<span class="gradient-text">Dolu</span></h3>
+          <p>Eşsiz kurguların, prestijli kırtasiye ürünlerinin ve yaratıcı hobi setlerinin bir araya geldiği DopDolu dünyası.</p>
           <div class="social-links">
             <a href="#" class="social-btn"><i class="fab fa-twitter"></i></a>
             <a href="#" class="social-btn"><i class="fab fa-instagram"></i></a>
@@ -278,7 +278,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2026 Dopdolu. Tüm Hakları Saklıdır. Designed with ❤️ for book lovers.</p>
+        <p>&copy; 2026 DopDolu. Tüm Hakları Saklıdır. Designed with ❤️ for enthusiasts.</p>
         <p>Vahit Keskin Showcase Project</p>
       </div>
     </div>
@@ -288,7 +288,7 @@
   <div class="sticky-buy-bar">
     <div class="container">
       <div style="display:flex; flex-direction:column;">
-        <span style="font-size:0.75rem; color:var(--text-muted); font-weight:700;">Seçilen Eser</span>
+        <span style="font-size:0.75rem; color:var(--text-muted); font-weight:700;">Seçilen Ürün</span>
         <span id="sticky-price" style="font-size:1.5rem; font-weight:800; color:var(--accent-secondary);">₺0.00</span>
       </div>
       <button id="sticky-buy-btn" class="gradient-btn" style="padding:0.7rem 2.2rem; border-radius:10px;">
